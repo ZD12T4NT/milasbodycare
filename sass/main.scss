@@ -1,0 +1,44 @@
+body::before{
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+#section{
+    min-height: 70vh;
+}
+
+
+
+// Custom variables
+$primary: #F7CEBA;
+$secondary: #E1CEC3;
+$light: #fbf5e5;
+$info: #625850;
+
+
+// Import functions & variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+   
+$custom-theme-colors: (
+    "altlight": #f2ebfa,
+    "altdark": #522192,
+);
+
+$theme-colors :map-merge($custom-theme-colors, $theme-colors);
+
+// Import 
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+// Form
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  .border-top-gray { border-top-color: #adb5bd; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  
+  .lh-condensed { line-height: 1.25; }
+  
